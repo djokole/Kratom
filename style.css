@@ -1,0 +1,14 @@
+@font-face {
+font-family: Azedo;
+src: url(css/fonts/Azedo-Light.otf);
+}
+
+@font-face {
+font-family: Azedo;
+src: url(css/fonts/Azedo-Bold.otf);
+font-weight: bold;
+}
+
+#container {
+	font-family: Azedo;
+}
