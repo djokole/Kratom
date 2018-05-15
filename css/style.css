@@ -171,6 +171,7 @@ footer {
 		position: fixed;
 		top: 0px;
 		background-color: #fff;
+		border-bottom: 1px solid;
 	}
 
 	header {
@@ -180,18 +181,40 @@ footer {
 
 	header li {
 		display: block;
-		width: 80%;
+		width: 100%;
 		text-align: center;
 		margin: auto;
-	}
-
-	#home, #products {
-		border: none;
+		padding: 0px 0px 0px 0px;
+		border-bottom: 1px solid;
+		height: 45px;
+		background-color: white;
+		position: fixed;
+		left: 0px;
 	}
 
 	ul {
-		max-height: 0px;
+		display: none;
 		background: #fff; 
+	}
+
+	.showing {
+		display: block;
+	}
+
+	#home {
+		top: 84px;
+	}
+
+	#about {
+		top: 130px;
+	}
+
+	#services {
+		top: 176px;
+	}
+
+	#products {
+		top: 222px;
 	}
 
 
