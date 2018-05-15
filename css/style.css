@@ -28,19 +28,20 @@ a:hover {
 	color: #eb8a44;
 	position: relative;
 	bottom: 3px;
-	font-size: 28px;
+	
 }
 ul {
+	height: 40px;
 	list-style-type: none;
 	margin: auto;
-	padding: none;
 	display: inline;
 }
 
 header li {
+	font-size: 32px;
 	display: inline;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 header {
@@ -49,7 +50,6 @@ header {
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 	margin-top: 20px;
-	color: #2E2300;
 }
 
 h1 {
@@ -67,6 +67,12 @@ section:hover {
 	opacity: 0.85;
 }
 
+footer {
+	min-height: 100px;
+	background-color: black;
+	opacity: 0.95;
+}
+
 /*Specific*/
 .l {
 	padding-left: 60px;
@@ -74,6 +80,18 @@ section:hover {
 
 .title {
 	font-size: 75px;
+}
+
+#about {
+	white-space: nowrap;
+}
+
+.menu-icon {
+	display: none;
+}
+
+#home, #products {
+	border-right: 2px solid;
 }
 
 .container {
@@ -122,4 +140,60 @@ section:hover {
 	border: 1px solid;
 	background: url(images/img5.jpg);
 	background-size: cover;
+}
+
+#foot {
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 20px; 
+	padding: 35px 0px 35px 0px;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 768px) {
+	
+	.menu-icon {
+		padding-top: 15px;
+		display: block;
+		float: right;
+		padding-right: 15px;
+	}
+
+	.title {
+		float: left;
+		padding-left: 15px;
+	}
+
+	.fix {
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		background-color: #fff;
+	}
+
+	header {
+		display: block;
+		background-color: white;
+	}
+
+	header li {
+		display: block;
+		width: 80%;
+		text-align: center;
+		margin: auto;
+	}
+
+	#home, #products {
+		border: none;
+	}
+
+	ul {
+		max-height: 0px;
+		background: #fff; 
+	}
+
+
+
 }
